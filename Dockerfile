@@ -13,7 +13,7 @@ MAINTAINER  Caspar MacRae (https://bitbucket.org/earcam)
 RUN apt-get update
 
 # Install Git
-RUN apt-get install -y git
+RUN apt-get install -y git locales
 
 # Update the package repository
 RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list
